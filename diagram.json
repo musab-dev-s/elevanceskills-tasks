@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Mosab",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -4.76, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 20,
+      "left": 250,
+      "attrs": { "horn": "single" }
+    }
+  ],
+  "connections": [
+    
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "servo1:PWM", "esp:18", "green", [ "v16.6", "h-149.24" ] ],
+    [ "servo1:V+", "esp:5V", "red", [ "h-38.8", "v-117.9", "h-249.6", "v240" ] ],
+    [ "servo1:GND", "esp:GND.1", "black", [ "v-98.8", "h-278.8", "v182.4" ] ]
+  ],
+  "dependencies": {}
+}

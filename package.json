@@ -1,0 +1,20 @@
+{
+  "name": "task4-bed-elevation-control",
+  "version": "1.0.0",
+  "description": "This project implements an **Intelligent Remote Bed Elevation Control System** as part of an IoT-based Smart Hospital simulation. It enables remote adjustment of a hospital bed's angle (0°–90°) using a Node-RED dashboard slider connected to a servo motor via an ESP32 microcontroller. The system ensures patient safety through smooth transitions, predefined modes, and automatic adjustments based on patient condition.",
+  "main": "generate_pdf.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "pdfkit": "^0.20.2"
+  }
+}
